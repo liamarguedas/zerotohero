@@ -1,0 +1,12 @@
+[package]
+name = "Find_PI_to_the_Nth_Digit"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+num = "0.4"
+[[bin]]
+name = "Find_PI_to_the_Nth_Digit"
+path = "main.rs"
