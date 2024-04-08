@@ -16,19 +16,6 @@ fn main() {
     .expect("This string cannot be converted to a number");
 
 
-    let mut last: i32 = generate_next_prime(number, 2); 
-
-    while generate_next() {
-            
-        println!("passed!");
-       
-        last = generate_next_prime(number, last);
-       
-        if last == 0 {
-            println!("There is no more primes");
-            break
-        }
-    }   
 } 
  
 fn generate_next_prime(n: i32, last_prime: i32 ) -> i32{
@@ -42,7 +29,7 @@ fn generate_next_prime(n: i32, last_prime: i32 ) -> i32{
             println!("{}", number);
 
             return_value = number;
-            break
+            break;
         }
     }
    return_value
